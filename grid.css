@@ -1,0 +1,25 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+.item{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin: 10px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.item-grid{
+    /* grid-column: 1/2; */
+    background-color: green;
+    height: 100px;
+}

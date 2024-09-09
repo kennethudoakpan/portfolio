@@ -1,0 +1,187 @@
+.header{
+    background-color: #f1f1f1;
+    text-decoration: none;
+    padding: 100px;
+    background-image: url(Kennethiedit.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+ul{
+    background-color: #fff
+}
+header ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #333;
+}
+header li{
+    float: right;
+    cursor: grab;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 9px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: #111;
+}
+body{
+    font-family: Arial,sans-serif;
+}
+.container{
+    display: flex;
+    align-items: normal;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+.container-image{
+    image-rendering: auto;
+    float: left;
+}
+.image{
+    width:100%;
+}
+.text{
+    font-size: 16px;
+}
+.column{
+    float: left;
+}
+.column.side{
+    width: 25%;
+}
+.column{
+    width: middle;
+    width: 50%;
+}
+/* .row:after{
+    content: "normal";
+    display: table;
+    clear: both;
+
+} */
+
+/* .profile-name::before{
+    content: "⭐";
+    color: gold;
+}
+.profile-name::after{
+    content: "⭐";
+    color: gold;
+} */
+.profile-card a:hover{
+    color: blue;
+}
+.profile-card input:focus{
+    border: 2px solid green;
+}
+.hobbies{
+    text-align: left;
+}
+.hobbies ol{
+    list-style-type: upper-roman;
+}
+.hobbies ul{
+    list-style-type: square;
+}
+.example::before{
+    content: "Before Text-";
+    color: blue;
+}
+.example::after{
+    content: "After Text";
+    color: red;
+}
+.hover-link:hover{
+    color: green;
+}
+.focus-input:focus{
+    background-color: lightblue
+}
+.roman-list{
+    list-style-type: upper-roman;
+}
+.square-list{
+    list-style-type: square;
+}
+.animation-div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: changecolor 2s infinite;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+}
+@keyframes changecolor{
+    0%{background-color: red;}
+    50%{background-color: yellow; transform: rotate(50deg); transform: translate(40px); transform: skew(50deg); transform: scale(2); opacity: 0.3;}
+    100%{background-color: red;}
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+p:hover{
+    background-color: aqua;
+    box-shadow: 0px 2px 3px 1px grey;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+/* .grid-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+} */
+
+.size6{
+    height: 100px;
+}
+
+footer, footer ul{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+footer ul{
+    padding: 0;
+    list-style: none;
+}
+
+footer li {
+    color: white;
+}
+@media only screen and (min-width:1025px){
+.flex{
+    flex-direction:row;
+}
+}
+
+@media only screen and (max-width:600px){
+    .flex{
+    flex-direction:column;
+    }
+}
+@media only screen and (max-width:601px)and(max-width:1024px){
+    .flex{
+        flex-direction: row;
+    }
+
+}
+img:hover{
+    transform:rotate(30deg)
+}

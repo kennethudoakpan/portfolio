@@ -1,0 +1,74 @@
+.profile-card{
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(red, green, blue, alpha);
+    text-align: center;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+}
+.profile-card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+.profile-card img:hover{
+    transform: scale(1.1);
+}
+.profile-name::before{
+    content: "⭐";
+    color: gold;
+}
+.profile-name::after{
+    content: "⭐";
+    color: gold;
+}
+.profile-card a:hover{
+    color: blue;
+}
+.profile-card input:focus{
+    border: 2px solid green;
+}
+.hobbies{
+    text-align: left;
+}
+.hobbies ol{
+    list-style-type: upper-roman;
+}
+.hobbies ul{
+    list-style-type: square;
+}
+.example::before{
+    content: "Before Text-";
+    color: blue;
+}
+.example::after{
+    content: "After Text";
+    color: red;
+}
+.hover-link:hover{
+    color: green;
+}
+.focus-input:focus{
+    background-color: lightblue
+}
+.roman-list{
+    list-style-type: upper-roman;
+}
+.square-list{
+    list-style-type: square;
+}
+.animation-div{
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    animation: changecolor 5s infinite;
+}
+@keyframes changecolor{
+    0%{background-color: red;}
+    50%{background-color: yellow;}
+    100%{background-color: red;}
+}

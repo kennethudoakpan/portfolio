@@ -1,0 +1,86 @@
+ol{
+    list-style-type:upper-roman;
+    
+}
+
+ol{
+    /*list-style-image: url(BB1qBb5g.jpeg); pseudo element :: */
+}
+
+p::first-letter{
+    color: blue;
+}
+
+P::first-line{
+    color:grey;
+}
+
+p::before{
+    content:"NNPC-";
+    color: maroon;
+}
+
+P::after{
+    content:"-NNPC" ;
+    color: brown;
+}
+
+P::selection{
+    background-color:purple ;
+}
+
+input::placeholder{
+    background-color: rgba(83, 155, 99, 0.432);
+}
+
+/*pseudo class : */
+
+p:hover{
+    background-color: pink;
+}
+a:visited{
+    color: springgreen;
+}
+a:link{
+    color: blue;
+}
+
+button:disabled{
+    background-color:brown;
+}
+input:focus{
+    color: green;
+}
+p:nth-child(2){
+    background-color: blueviolet;
+}
+p:nth-last-child(1){
+    background-color: teal;
+}
+a:first-child{
+    background-color: yellow;
+}
+a:last-child{
+    background-color: orange;
+}
+div:only-child{
+    font-weight: 900;
+}
+span:nth-of-type(1){
+    font-size: 300px;
+}
+@keyframes animation{
+    0%{background-color: red;}
+    25%{background-color: yellow; border-radius: 50%;width: 100%;}
+    50%{background-color: green; border: radius 50%;width: 100%;}
+    75%{background-color: blue; border: radius 50%; width: 100%;}
+    100%{background-color: gray; border-radius:100%;width: 100%;}
+}
+.div-animation{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
