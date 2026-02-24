@@ -1,0 +1,78 @@
+body{
+    background-image: url(BingWallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+}
+svg{
+    width: 30px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    margin-right: 6px;
+}
+
+nav > svg{
+    color: white;
+}
+
+input{
+    border: 2px solid silver;
+    width: 60%;
+    border-radius: 15px;
+    padding: 6px;
+}
+
+.searchbar{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 200px;
+}
+ .searchbar > svg{
+    position: absolute;
+    height: 20px;
+    padding: 3px;
+    color: blue;
+ }
+ 
+ .microphone{
+    right: 28%;
+    height: 5px;
+ }
+ .QR{
+    right: 24%;
+ }
+
+ .search{
+    right: 20%;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    overflow: scroll;
+}
+
+.card{
+    padding: 3px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    margin: 3px;
+}
